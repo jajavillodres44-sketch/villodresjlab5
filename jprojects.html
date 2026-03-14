@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects - My Portfolio</title>
+    <link rel="icon" type="image/png" href="jaja.jpg.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a> 
+    <a href="jprojects.html">My Projects</a> 
+    <a href="j_about.html">About Me</a> 
+    <a href="jcontact.html">Contacts</a>
+</nav>
+
+
+<div class="projects-container">
+
+<div class="project-box">
+<h3>Project 1</h3>
+<img src="project1.jpg" alt="Project 1" onclick="openModal(this)">
+<p>This is my output on our activity on multimedia where we are asked to edit Ichigo Kurosaki.</p>
+</div>
+
+<div class="project-box">
+<h3>Project 2</h3>
+<img src="project2.jpg" alt="Project 2" onclick="openModal(this)">
+<p>This is the final output after we assemble our arduino smart robot.</p>
+</div>
+
+<div class="project-box">
+<h3>Project 3</h3>
+<img src="project3.jpg" alt="Project 3" onclick="openModal(this)">
+<p>This is an activity where we have to make a website.</p>
+</div>
+
+<div class="project-box">
+<h3>Project 4</h3>
+<img src="project4.jpg" alt="Project 4" onclick="openModal(this)">
+<p>Our instructor gave us an activity where we have to make our own brand and make a brochure.</p>
+</div>
+
+<div class="project-box">
+<h3>Project 5</h3>
+<video controls width="150">
+<source src="project5.mp4" type="video/mp4">
+</video>
+<p>This is my video presentation on one of our previous systems.</p>
+</div>
+
+</div>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <img id="modalImg">
+</div>
+
+<script>
+function openModal(img) {
+    document.getElementById("imageModal").style.display = "block";
+    document.getElementById("modalImg").src = img.src;
+}
+
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
