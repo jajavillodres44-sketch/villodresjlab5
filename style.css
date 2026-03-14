@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif; /* default readable font */
+    background-color: #f09ce9; /* pastel pink background */
+    color: #e596f5;            /* text color */
+    margin: 0;
+    padding: 30px 40px;
+}
+
+/* Main heading */
+h1 {
+    font-family: 'Parisienne', cursive; /* girly cursive font */
+    color: #070013;                     /* dark color for contrast */
+    font-size: 7.5rem;                  /* adjust size */
+    font-weight: 700;                    /* makes it bold */
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+/* Sub-headings */
+h2, h3 {
+    font-family: 'Poppins', sans-serif; /* body text font or semi-cursive if you want */
+    color: #070013;
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 0.8em; /* reduced from 1.5em to move it up */
+    margin-bottom: 0.5em; /* optional, adds small space below */
+}
+
+/* Navigation bar */
+/* Cute pill-style navbar (upper right) */
+nav {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    display: flex;
+    gap: 15px;
+    background-color: #eb83be; /* pastel lavender */
+    padding: 10px 15px;
+    border-radius: 50px; /* pill shape */
+    box-shadow: 0 4px 10px rgba(124, 58, 237, 0.2);
+}
+
+/* Nav links */
+nav a {
+    color: #7c3aed;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: #d8b4fe;
+    color: white;
+}
+
+/* Horizontal line */
+hr {
+    border: none;
+    border-top: 2px solid #f528e8;
+    margin: 2em 0;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+    text-align: center;
+    color: #070013;
+}
+
+/* Image styling (for About Me and Projects) */
+img {
+    display: block;
+    margin: 1em auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(147, 90, 246, 0.3);
+    max-width: 100%;  /* makes images larger and responsive */
+    height: auto;
+}
+/* Contact layout */
+.contact-container {
+    display: flex;
+    justify-content: space;
+    align-items:center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* Contact info */
+.contact-info a {
+    color: #7c3aed; /* purple theme */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #5b21b6; /* darker purple on hover */
+    text-decoration: underline;
+}
+/* Inputs */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #c4b5fd;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Button */
+form button {
+    background: #7c3aed;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #5b21b6;
+}
+/* Projects Grid */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Project box */
+.project-box {
+    background: #af8ed1;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 10 4px 10px rgba(124, 58, 237, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animation */
+.project-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(124, 58, 237, 0.35);
+}
+
+/* Small images */
+.project-box img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+/* Small video */
+.project-box video {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+/* Small text */
+.project-box p {
+    font-size: 0.9rem;
+}
+/* Fullscreen modal */
+.modal{
+    display:none;
+    position:fixed;
+    z-index:999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.9);
+}
+
+.modal img{
+    display:block;
+    margin:auto;
+    max-width:90%;
+    max-height:90%;
+    margin-top:50px;
+}
+/* About Me container */
+.about-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* space between image and text */
+    padding: 30px;
+    background: linear-gradient(135deg, #f9c5f9, #e0bbff); /* pastel gradient box */
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(124, 58, 237, 0.2);
+    max-width: 900px;
+    margin: 40px auto;
+    flex-wrap: wrap; /* responsive on small screens */
+}
+
+/* Image container */
+.image-container img {
+    width: 350px; /* larger image */
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(147, 90, 246, 0.3);
+}
+
+/* About text */
+.about-text {
+    flex: 1;
+    font-family: 'Poppins', sans-serif; /* girly cursive */
+    font-size: 1.3rem;
+    color: #4b2354; /* dark purple text */
+}
+/* Image container with pastel pink background */
+.image-container {
+    background-color: #f09ce9; /* pastel pink */
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block; /* shrink to fit image */
+}
+
+/* Image inside the container */
+.image-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Image inside the box */
+.about-box img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(227, 86, 161, 0.3);
+}
+
+/* About text container with pastel purple background */
+.about-text {
+    background-color: #f09ce9; /* pastel purple */
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(195, 177, 225, 0.2);
+}
+/* Responsive About Me Box */
+@media screen and (max-width: 700px) {
+    .about-box {
+        flex-direction: column; /* stack image and text */
+        text-align: center;     /* center the text */
+    }
+
+    .about-box img {
+        width: 70%;             /* smaller image on mobile */
+        margin-bottom: 15px;
+    }
+
+    .about-text p {
+        font-size: 1rem;        /* slightly smaller text */
+    }
+}
+.about-box:hover {
+    transform: translateY(-5px);
+    transition: transform 0.5s ease;
+}
